@@ -1,0 +1,54 @@
+#                                                     🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+#                                                   💻Silky Pickaxes Config💻
+#                                                   🔥Coded By Mike3132🔥
+#                                                   💻Silky Pickaxes Config💻
+#                                                     🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+
+Version: 'Version 1.0'
+ConfigVersion: '1.0'
+##### WARNING: DO NOT CHANGE ANYTHING ABOVE THIS LINE IT WILL BREAK THE PLUGIN!#####
+
+#✍✍✍✍✍Permissions✍✍✍✍✍
+#SilkyPickaxes.Command > Base permission for commands
+#SilkyPickaxes.Command.Give > Ability to give pickaxes
+#SilkyPickaxes.Command.Help > Shows the help menu
+#SilkyPickaxes.Command.Reload > Reload the plugin config files
+#SilkyPickaxes.Command.List > Shows the tool pickaxes menu
+
+#♢♢♢♢♢Single Use Pickaxe Item♢♢♢♢♢
+#Single Use Name -> Name of the 1 time use spawner pickaxe (Please use & for color codes).
+Single-Use-Pickaxe-Name: '&5&lSpawner pickaxe'
+
+#Single Use Lore -> Any lore lines you would like on the 1 time use spawner pickaxe (Please use & for color codes).
+Single-Use-Pickaxe-Lore:
+  - '&eThis pickaxe can mine any spawner'
+  - '&4WARNING: &cThis pickaxe only has 1 use'
+
+#This allows for custom model data for resource packs
+Single-Use-Model-Data: 1000
+
+#Should players be able to modify single use pickaxes in an anvil?
+Singe-Use-Anvil-Use: true
+
+#♢♢♢♢♢Multi Use Pickaxe Item♢♢♢♢♢
+#Multi Use Name -> Name of the 1 time use spawner pickaxe (Please use & for color codes).
+Multi-Use-Pickaxe-Name: '&5&lSpawner pickaxe'
+
+#Multi Use Lore -> Any lore lines you would like on the 1 time use spawner pickaxe (Please use & for color codes).
+Multi-Use-Pickaxe-Lore:
+  - '&eThis pickaxe can mine any spawner'
+  - '&4&ka&2Infinite uses &4&ka'
+
+#This allows for custom model data for resource packs
+Multi-Use-Model-Data: 2000
+
+#Should players be able to modify multi use pickaxes in an anvil?
+Multi-Use-Anvil-Use: true
+
+#See messages.yml for all configurable plugin messages
+#♏ If you have any questions please join my discord, open a support ticket and @Mike3132
+#♏ https://discord.gg/ePQGvQuzG3
+#♏ Thanks for downloading and have a wonderful day
+
+#♛♛♛♛♛ END OF CONFIG ♛♛♛♛♛
+#This is the default config file.

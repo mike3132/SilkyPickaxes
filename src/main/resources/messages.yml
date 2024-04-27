@@ -1,0 +1,70 @@
+#                                                     🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+#                                                   💻Silky Pickaxes Messages💻
+#                                                   🔥Coded By Mike3132🔥
+#                                                   💻Silky Pickaxes Messages💻
+#                                                     🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+
+#✍✍✍✍ This file handles all messages for the plugin including the prefix.✍✍✍✍
+#✍✍✍✍ You can change anything here to be whatever custom stuff you want.✍✍✍✍
+#☠☠☠☠ DO NOT CHANGE THE "Messages:" line as this will break the plugin.☠☠☠☠
+#☠☠☠☠ ALL messages must have single quotes '' as seen in this default config.☠☠☠☠
+
+Messages:
+  #Plugin prefix for all messages.
+  Prefix: '&bSilky &dPickaxes &7> '
+
+  #♢♢♢♢♢ Player Messages ♢♢♢♢♢
+
+  #➳➳➳➳➳ Command Arguments ➳➳➳➳➳
+
+  #♢♢♢♢♢ No permission placeholder ♢♢♢♢♢
+  No-permissions-placeholder: '&4ERROR: &cYou do not have permission to execute this command.'
+
+  #♢♢♢♢♢ Not enough placeholder ♢♢♢♢♢
+  Not-enough-args-placeholder: '&4ERROR: &cNot enough command arguments.'
+
+  #♢♢♢♢♢ Give placeholder ♢♢♢♢♢
+  Not-give-placeholder: '&4ERROR: &cInvalid argument. &2Please use "Give" "List" "Reload."'
+
+  #♢♢♢♢♢ Player name placeholder ♢♢♢♢♢
+  Not-player-placeholder: '&4ERROR: &cPlease choose a player name.'
+
+  #♢♢♢♢♢ Player not found placeholder ♢♢♢♢♢
+  Player-not-found-placeholder: '&4ERROR: &cThis is not a player.'
+
+  #♢♢♢♢♢ Pickaxe name placeholder ♢♢♢♢♢
+  Not-pickaxe-placeholder: '&4ERROR: &cPlease choose a pickaxe.'
+
+  #♢♢♢♢♢ Pickaxe not found placeholder ♢♢♢♢♢
+  Pickaxe-not-found-placeholder: '&4ERROR: &cThis is not a tool name.'
+
+  #♢♢♢♢♢ Player give placeholder ♢♢♢♢♢
+  Player-give-tool-placeholder: '&6You have been given a pickaxe.'
+
+  #♢♢♢♢♢ Player inventory full placeholder ♢♢♢♢♢
+  Player-inventory-full-placeholder: '&6You do not have an available inventory slot, Your tools have been dropped on the ground.'
+
+
+  #➳➳➳➳➳ Pickaxe Options Messages ➳➳➳➳➳
+
+  #♢♢♢♢♢ Cannot place in anvil ♢♢♢♢♢
+  #If you have disabled players from modifying pickaxes in anvils this message will be sent to them
+  Anvil-disabled-message: '&4ERROR: &cYou cannot modify this pickaxe.'
+
+
+  #➳➳➳➳➳ Help Section ➳➳➳➳➳
+  #WARNING: You cannot just add more tiers to this. You can only modify what is here
+
+  #♢♢♢♢♢ Pickaxe list ♢♢♢♢♢
+  Tools-list-placeholder-header: '&e----- &6Current list of pickaxes &e-----'
+  Tools-list-A: '&eSingle use pickaxe &7> &f1 time use pickaxe to pickup spawners'
+  Tools-list-B: '&4Multi use pickaxe &7> &fInfinite use pickaxe to pickup spawners'
+  Tools-list-placeholder-footer: '&e----------------------------------------'
+
+
+  #See config.yml for permissions, and other plugin configurations
+  #♏ If you have any questions please join my discord, open a support ticket and @Mike3132
+  #♏ https://discord.gg/EHm6Ra3K
+  #♏ Thanks for downloading and have a wonderful day
+  #♛♛♛♛♛ End of messages.yml ♛♛♛♛♛
+  #This is the default messages file.

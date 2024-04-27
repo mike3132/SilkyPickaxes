@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SilkyPickaxes:jar">
+    <output-path>$PROJECT_DIR$/../../../Build Tools/plugins</output-path>
+    <root id="archive" name="SilkyPickaxes.jar">
+      <element id="module-output" name="SilkyPickaxes" />
+    </root>
+  </artifact>
+</component>

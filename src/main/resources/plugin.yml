@@ -1,0 +1,11 @@
+name: SilkyPickaxes
+version: '${project.version}'
+main: net.resolutemc.silkypickaxes.SilkyPickaxes
+api-version: '1.20'
+depend:
+  - RoseStacker
+commands:
+  SilkyPickaxe:
+    description: Main plugin command
+    permission: SilkyPickaxes.Command.give
+    aliases: sp
