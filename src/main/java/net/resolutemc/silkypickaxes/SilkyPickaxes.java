@@ -1,5 +1,6 @@
 package net.resolutemc.silkypickaxes;
 
+import net.milkbowl.vault.economy.Economy;
 import net.resolutemc.silkypickaxes.Chat.ColorTranslate;
 import net.resolutemc.silkypickaxes.Commands.GiveCommand;
 import net.resolutemc.silkypickaxes.Commands.TabComplete;
@@ -7,6 +8,7 @@ import net.resolutemc.silkypickaxes.Configs.ConfigCreator;
 import net.resolutemc.silkypickaxes.Events.AnvilEvent;
 import net.resolutemc.silkypickaxes.Events.BlockBreak;
 import org.bukkit.Bukkit;
+import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Level;
@@ -15,6 +17,7 @@ public final class SilkyPickaxes extends JavaPlugin {
 
     private static SilkyPickaxes INSTANCE;
     private final ColorTranslate colorTranslate = new ColorTranslate();
+    private Economy economy = null;
 
     @Override
     public void onEnable() {
@@ -25,6 +28,11 @@ public final class SilkyPickaxes extends JavaPlugin {
         if (!Bukkit.getPluginManager().isPluginEnabled("RoseStacker")) {
             getLogger().log(Level.SEVERE, "Please install RoseStacker > https://www.spigotmc.org/resources/rosestacker.82729/");
             Bukkit.getPluginManager().disablePlugin(this);
+            return;
+        }
+        if (!setupEconomy() ) {
+            getLogger().log(Level.SEVERE, "Please install Vault > https://www.spigotmc.org/resources/vault.34315/");
+            getServer().getPluginManager().disablePlugin(this);
             return;
         }
 
@@ -48,9 +56,24 @@ public final class SilkyPickaxes extends JavaPlugin {
         return INSTANCE;
     }
 
+    public Economy getEconomy() {
+        return economy;
+    }
+
     private void registerCommands() {
         new GiveCommand();
         new TabComplete();
+    }
+    private boolean setupEconomy() {
+        if (getServer().getPluginManager().getPlugin("Vault") == null) {
+            return false;
+        }
+        RegisteredServiceProvider<Economy> rsp = getServer().getServicesManager().getRegistration(Economy.class);
+        if (rsp == null) {
+            return false;
+        }
+        economy = rsp.getProvider();
+        return economy != null;
     }
 
 }

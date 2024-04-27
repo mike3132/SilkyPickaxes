@@ -30,6 +30,12 @@ Single-Use-Model-Data: 1000
 #Should players be able to modify single use pickaxes in an anvil?
 Singe-Use-Anvil-Use: true
 
+#Should players be charged an amount of breaking a spawner? (Requires vault and an economy)
+Single-Use-Economy-Charge: true
+
+#How much should players be charged? (You must use a double here) (Doubles mean there must be . something on this side)
+Single-Use-Price: 10.0
+
 #♢♢♢♢♢Multi Use Pickaxe Item♢♢♢♢♢
 #Multi Use Name -> Name of the 1 time use spawner pickaxe (Please use & for color codes).
 Multi-Use-Pickaxe-Name: '&5&lSpawner pickaxe'
@@ -44,6 +50,12 @@ Multi-Use-Model-Data: 2000
 
 #Should players be able to modify multi use pickaxes in an anvil?
 Multi-Use-Anvil-Use: true
+
+#Should players be charged an amount of breaking a spawner? (Requires vault and an economy)
+Multi-Use-Economy-Charge: true
+
+#How much should players be charged? (You must use a double here) (Doubles mean there must be . something on this side)
+Multi-Use-Price: 100.0
 
 #See messages.yml for all configurable plugin messages
 #♏ If you have any questions please join my discord, open a support ticket and @Mike3132

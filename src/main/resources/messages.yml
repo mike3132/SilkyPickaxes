@@ -44,12 +44,32 @@ Messages:
   #♢♢♢♢♢ Player inventory full placeholder ♢♢♢♢♢
   Player-inventory-full-placeholder: '&6You do not have an available inventory slot, Your tools have been dropped on the ground.'
 
+  #♢♢♢♢♢ Player Crouched placeholder ♢♢♢♢♢
+  Player-Crouched: '&6Do not crouch while breaking a spawner'
+
 
   #➳➳➳➳➳ Pickaxe Options Messages ➳➳➳➳➳
 
   #♢♢♢♢♢ Cannot place in anvil ♢♢♢♢♢
   #If you have disabled players from modifying pickaxes in anvils this message will be sent to them
   Anvil-disabled-message: '&4ERROR: &cYou cannot modify this pickaxe.'
+
+  #♢♢♢♢♢ Economy enabled options ♢♢♢♢♢
+  #If you have the economy portion disabled you can ignore all the following
+
+  #The message that is sent to the player if they have enough money to mine a spawner with a single use pickaxe
+  Single-Use-Economy-Money-Taken-Message: '&bYou have been charged &d$%economy_amount% &bfor mining this spawner'
+
+  #The message that is sent to the player if they have enough money to mine a spawner with a multi use pickaxe
+  Multi-Use-Economy-Money-Taken-Message: '&bYou have been charged &d$%economy_amount% &bfor mining this spawner'
+
+  #The message that is sent to the player to let them know their new balance
+  Pickaxe-Use-Economy-Balance-Left-Message: '&bYour new balance is &d$%economy_amount%'
+
+  #The message that is sent to the player if they DON'T have enough money to mine a spawner
+  Pickaxe-Use-Economy-Money-Missing-Message: '&4ERROR: &cYou do not have enough money to mine this spawner'
+
+
 
 
   #➳➳➳➳➳ Help Section ➳➳➳➳➳

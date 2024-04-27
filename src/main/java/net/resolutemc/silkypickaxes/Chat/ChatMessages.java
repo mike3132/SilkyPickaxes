@@ -23,4 +23,12 @@ public class ChatMessages {
         String message = configMessages.getString("Messages.Prefix") + configMessages.getString("Messages." + key);
         sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
     }
+
+    public void sendPlayerMoneyMessage(Player player, String key, String amount) {
+        File messagesConfig = new File(SilkyPickaxes.getInstance().getDataFolder(), "messages.yml");
+        YamlConfiguration configMessages = YamlConfiguration.loadConfiguration(messagesConfig);
+        String message = configMessages.getString("Messages.Prefix") + configMessages.getString("Messages." + key);
+        message = message.replace("%economy_amount%", amount);
+        player.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
+    }
 }
